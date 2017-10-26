@@ -1,0 +1,91 @@
+.TitleDiv{
+	margin-bottom: 20px;
+}
+
+#ScrollingText{
+color: #FFFFFF;
+font-size: 25 ;
+}
+
+#UteLogo{
+height: 200px;
+width: 200px;
+margin-bottom: 50px;
+}
+
+#MainTitle{
+font-size: 45 ;
+color: #CC0000;
+}
+
+.surveystyle{
+height:200px;
+width:250px;
+border:5px solid #CC0000;
+color: #FFFFFF;
+}
+
+#ThingsILikeList{
+border: solid 4px #CC0000 ;
+width: 225px;
+color: #FFFFFF;
+margin-bottom: 50px;
+}
+
+.HeaderStyle1{
+color: #FFFFFF;
+font-size: 1.5em; 
+margin-bottom: 20px;
+}
+
+#FavMusicArtistList{
+border: solid 4px #CC0000;
+width: 200px;
+color: #FFFFFF;
+margin-bottom: 50px;
+
+}
+
+body{
+	background-color: black;
+}
+
+#redbox{
+height: 80px;
+width: 400px;
+background-color: #CC0000;
+color: white;
+font-size: 20;
+}
+
+#whitebox{
+height: 80px;
+width: 400px;
+background-color: #FFFFFF;
+font-size: 17.5;
+}
+
+#greybox{
+height: 80px;
+width: 400px;
+background-color: #808080 ;
+color: white;
+font-size: 20;
+}
+
+.LinkStyle1{
+ color: #FFFFFF ;
+}
+
+.LinkStyle2{
+color: #CC0000 ;
+}
+
+#ColumRight{
+float:right;
+width:35%;
+}
+
+#ColumLeft{
+width:35%;
+}

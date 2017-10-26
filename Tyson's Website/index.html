@@ -1,0 +1,223 @@
+<html> 
+  
+ <head> 
+  Tyson's Website! 
+  </title> 
+  <link rel="stylesheet" type="text/css" href="main.css"> 
+  <script>
+  function banner(){ 
+  var text = confirm("Are you sure you want to go to this website?"); 
+  return text; 
+  } //end function banner
+
+  function answer(){
+  var radio = document.getElementsByName("trivia"); 
+  var selection = false; 
+  var message = "";
+
+  for( var i = 0; i < radio.length; i++) { 
+  if(radio[i].value == "trivia4" && radio[i].checked == true) { 
+  selection = true; 
+  } //end if statement 
+  } //end for loop 
+
+  if(selection == true) {
+  message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+  } else { 
+  message = message + "<b><p style='color:red'>Try again my friend.</p></b>";
+  }
+  document.getElementById("response").innerHTML = message;
+
+
+  } //end function answer
+  </script>
+
+ </head> 
+    
+  <body> 
+  
+  <marquee> 
+    <strong id="ScrollingText"> 
+        Welcome To My Website! 
+      </strong> 
+  </marquee> 
+  <hr> 
+  </hr> 
+  
+  
+  <center> 
+    <div class="TitleDiv"> 
+  
+      <h1 id="MainTitle"> 
+          Tyson's Website 
+  
+          </h1> 
+      <h1> 
+        <nav> 
+          <ul> 
+            <li> <a class="LinkStyle1" href="index.html"> Home </a> 
+            </li> 
+            <li> <a class="LinkStyle1" href=""> About </a> 
+            </li> 
+            <li> <a class="LinkStyle1" href=""> Gallery </a> 
+            </li> 
+           </ul> 
+        </nav> 
+      </h1> 
+  </center> 
+  
+  <div id="ColumRight" <span class="HeaderStyle1"> 
+    <center> 
+    <strong> 
+        Things I like: 
+       </strong> 
+    </span> 
+  
+    <div id="ThingsILikeList"> 
+      <p> 
+        <ul> 
+          <li> 
+            I like to Dj 
+          </li> 
+  
+          <li> 
+            Coding 
+          </li> 
+  
+          <li> 
+            University Of Utah 
+          </li> 
+  
+          <li> 
+            Mountain biking 
+          </li> 
+  
+          <li> 
+            Hangout with my friends 
+          </li> 
+        </ul> 
+      </p> 
+    </div> 
+  </center> 
+  
+  <center> 
+  
+    <div class="HeaderStyle1"> 
+  
+      <strong> 
+            Some Of My Favorite Music Artist: 
+          </strong> 
+  
+    </div> 
+  </center> 
+  
+  <center> 
+    <div id="FavMusicArtistList"> 
+      <p> 
+        <ul> 
+          <li> 
+            Imagine Dragons 
+          </li> 
+          <li> 
+            One Republic 
+          </li> 
+          <li> 
+            Shawn Mendes 
+          </li> 
+          <li> 
+            Kygo 
+          </li> 
+          <li> 
+            Hailee Steinfeld 
+          </li> 
+        </ul> 
+    </div> 
+  </center> 
+  
+  </p> 
+  
+  <center> <img id="UteLogo" src="http://www.uredzone.com/SiteImages/4-SchoolImages/4-cs_background_img/4-Utah_Utes_logo.png"> 
+  </center> 
+  <center> 
+    <a class="LinkStyle2" href="https://www.utahutes.com/schedule.aspx?path=football" onclick="return banner()"> Learn More About University Of Utah Football</a> 
+  </center> 
+  
+  </div> 
+  
+  <div id="ColumLeft"> 
+  
+    <center> 
+      <h2 class="HeaderStyle1"> 
+          What do you like: 
+        </h2> 
+  
+      <div class="surveystyle">
+         <p> 
+          <strong> 
+            What Is One Of My Favorite Things To Do? 
+          </strong> 
+        </p> 
+        <form>
+        <div id="response"> 
+          <input type="radio" name="trivia" value="trivia1"> Play Football <br> 
+          <input type="radio" name="trivia" value="trivia2"> Play Basketball <br> 
+          <input type="radio" name="trivia" value="trivia3"> Go To California <br>
+          <input type="radio" name="trivia" value="trivia4"> Hangout With Friends <br> 
+        </form> 
+        <input type="button" id="Submit" value="Submit" onclick="answer()"> 
+      </div> 
+    </center> 
+  
+  
+    <audio width="400" height="220" control autoplay> 
+        <source src="raygun.mp3" type="audio/mpeg"> 
+        </audio> 
+  
+    <center> 
+      <p> 
+        <video width="400" height="220" controls autoplay> 
+            <source src="http://www.w3schools.com/HTML/mov_bbb.mp4" type="video/mp4"> 
+          </source> 
+        </video> 
+      </p> 
+    </center> 
+  
+    <center> 
+      <h2 class="HeaderStyle1"> 
+        <strong> 
+        A Few More Random Facts About Me 
+      </strong> 
+      </h2> 
+  
+  
+      <div id="redbox"> 
+        <center> 
+          <strong> 
+          I am really into music, I also really enjoy partying! That's why I became a DJ. 
+         </strong> 
+        </center> 
+      </div> 
+  
+  
+      <div id="whitebox"> 
+        <center> 
+          <strong> 
+        I also am really into coding video games and enjoy it a lot! I make mods for a game called Garry's Mod, and then I upload the mods for teh community to use. 
+         </strong> 
+        </center> 
+      </div> 
+  
+      <div id="greybox"> 
+        <center> 
+          <strong> 
+      Some outdoor activity's I do are mountain biking, Long boarding, Motorcross, and ride waverunners in the summer! 
+         </strong> 
+        </center> 
+      </div> 
+      <center> 
+  </div> 
+  
+  
+</body> 
+  
+</html> 
